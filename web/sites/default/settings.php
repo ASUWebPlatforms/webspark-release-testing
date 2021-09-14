@@ -32,3 +32,12 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+
+/**
+ * Enable the configuration readonly functionality.
+ */
+$settings['config_readonly'] = TRUE;
+/**
+ * Allow all configuration to be changed.
+ */
+$settings['config_readonly_whitelist_patterns'] = ['*'];

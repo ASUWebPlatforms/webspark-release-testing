@@ -21,12 +21,12 @@
     "drupal/seckit": "2.0.0",
     "asuwebpplatforms/webspark-module-asu_brand": "1.1.0",
     "drupal/radix": "4.10.0",
-    "asuwebplatforms/webspark-profile-webspark": "1.0.1",
+    "asuwebplatforms/webspark-profile-webspark": "1.1.0",
     "drupal/components" : "2.4.0",
     "npm-asset/select2": "4.1.0-RC.0",
     "npm-asset/fonticonpicker--fonticonpicker": "3.1.1",
     "oomphinc/composer-installers-extender": "2.0.0",
-    "asuwebplatforms/webspark-module-webspark_utility": "1.0.0",
+    "asuwebplatforms/webspark-module-webspark_utility": "1.1.0",
     "asuwebplatforms/webspark_module_renovation_layouts": "1.0.0",
     "drupal/select2" : "1.13.0",
     "drupal/paragraphs" : "1.12.0",
@@ -37,7 +37,7 @@
     "drupal/image_widget_crop": "2.3.0",
     "drupal/layout_builder_restrictions" : "2.9.0",
     "asuwebplatforms/webspark_module_views_pager": "1.0.0",
-    "asuwebplatforms/webspark-module-webspark_blocks": "1.0.1",
+    "asuwebplatforms/webspark-module-webspark_blocks": "1.1.0",
     "drupal/linkit": "6.0.0-beta2",
     "bower-asset/fontawesome": "5.15.3",
     "drupal/current_page_crumb": "1.3.0",
@@ -68,7 +68,10 @@
     "ckeditor/fakeobjects": "4.16.0",
     "ckeditor/link": "4.16.1",
     "drupal/redirect": "1.6.0",
-    "drupal/simple_sitemap": "4.0.0-alpha2"
+    "drupal/simple_sitemap": "4.0.0-alpha2",
+    "drupal/config_readonly": "1.0.0-beta4",
+    "drupal/config_update": "1.7.0",
+    "drupal/entity_clone": "1.0.0-beta6"
   },
-  "version": "0.1.29"
+  "version": "0.1.30"
 }
