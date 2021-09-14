@@ -71,7 +71,8 @@
     "drupal/simple_sitemap": "4.0.0-alpha2",
     "drupal/config_readonly": "1.0.0-beta4",
     "drupal/config_update": "1.7.0",
-    "drupal/entity_clone": "1.0.0-beta6"
+    "drupal/entity_clone": "1.0.0-beta6",
+    "drupal/webform": "6.0.5"
   },
-  "version": "0.1.30"
+  "version": "0.1.31"
 }
