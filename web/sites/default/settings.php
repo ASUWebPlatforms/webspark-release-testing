@@ -36,7 +36,9 @@ if (file_exists($local_settings)) {
 /**
  * Enable the configuration readonly functionality.
  */
-$settings['config_readonly'] = TRUE;
+if (PHP_SAPI !== 'cli') {
+  $settings['config_readonly'] = TRUE;
+}
 /**
  * Allow all configuration to be changed.
  */
