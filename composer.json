@@ -1,5 +1,5 @@
 {
-  "name": "asuwebplatforms/webspark2-drupal-template",
+  "name": "asuwebplatforms/webspark-release-testing",
   "description": "Install Drupal 9 with Composer on Pantheon.",
   "type": "project",
   "license": "MIT",
