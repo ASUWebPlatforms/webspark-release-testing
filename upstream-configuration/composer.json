@@ -73,7 +73,10 @@
     "drupal/config_update": "1.7.0",
     "drupal/webform": "6.0.5",
     "drupal/robotstxt": "^1.4",
-    "wikimedia/composer-merge-plugin": "^2.0"
+    "wikimedia/composer-merge-plugin": "^2.0",
+    "drupal/captcha": "^1.2",
+    "drupal/schema_metatag": "^2.2",
+    "drupal/editoria11y": "^1.0"
   },
-  "version": "0.1.43"
+  "version": "0.1.44"
 }
