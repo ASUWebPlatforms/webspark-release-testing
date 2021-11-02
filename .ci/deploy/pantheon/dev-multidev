@@ -34,10 +34,12 @@ if [ -f "config/system.site.yml" ] ; then
 fi
 
 # Clear Drupal cache
-time terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- cr
+# We comment on it temporarily to reduce build times, it can be run manually
+# terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- cr
 
 # Clear the environment cache
-time terminus -n env:clear-cache $TERMINUS_SITE.$TERMINUS_ENV
+# We comment on it temporarily to reduce build times, it can be run manually
+#terminus -n env:clear-cache $TERMINUS_SITE.$TERMINUS_ENV
 
 # Ensure secrets are set
 time terminus -n secrets:set "$TERMINUS_SITE.$TERMINUS_ENV" token "$GITHUB_TOKEN" --file='github-secrets.json' --clear --skip-if-empty
