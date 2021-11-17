@@ -77,7 +77,7 @@
     "drupal/captcha": "^1.2",
     "drupal/schema_metatag": "^2.2",
     "drupal/editoria11y": "^1.0",
-    "drupal/decorative_image_widget":"1.0@alpha"
+    "drupal/decorative_image_widget":"1.0.0-alpha4"
   },
-  "version": "0.1.48"
+  "version": "0.1.49"
 }
