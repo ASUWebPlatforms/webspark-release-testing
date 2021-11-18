@@ -42,7 +42,7 @@
     "bower-asset/fontawesome": "5.15.3",
     "drupal/current_page_crumb": "1.3.0",
     "drupal/pathauto": "1.8.0",
-    "asuwebplatforms/webspark-module-webspark_isearch": "1.0.0",
+    "asuwebplatforms/webspark-module-webspark_isearch": "1.0.2",
     "drupal/media_library_form_element": "2.0.3",
     "drupal/admin_toolbar": "3.0.3",
     "drupal/allowed_formats": "1.3.0",
