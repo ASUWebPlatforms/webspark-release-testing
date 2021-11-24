@@ -35,7 +35,7 @@ fi
 
 # Clear Drupal cache
 # We comment on it temporarily to reduce build times, it can be run manually
-# terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- cr
+#terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- cr
 
 # Clear the environment cache
 # We comment on it temporarily to reduce build times, it can be run manually

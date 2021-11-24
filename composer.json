@@ -42,14 +42,22 @@
     }
   ],
   "require": {
+    "drupal/media_entity_soundcloud": "^3.0",
     "drush/drush": "^10",
-    "pantheon-upstreams/upstream-configuration": "*"
+    "pantheon-upstreams/upstream-configuration": "*",
+    "pantheon-systems/quicksilver-pushback": "^2",
+    "pantheon-systems/drupal-integrations": "^8"
   },
   "conflict": {
     "drupal/drupal": "*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "autoload": {
+    "classmap": [
+      "scripts/composer/ScriptHandler.php"
+    ]
+  },
   "scripts": {
     "build-assets": [
       "@prepare-for-pantheon",
@@ -57,7 +65,16 @@
     ],
     "lint": "find web/modules/custom web/themes/custom -name '*.php' -exec php -l {} \\;",
     "unit-test": "echo 'No unit test step defined.'",
-    "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon"
+    "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
+    "post-install-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+    ],
+    "post-update-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+    ],
+    "post-create-project-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+    ]
   },
   "extra": {
     "enable-patching": true,
@@ -100,6 +117,12 @@
       "npm-asset",
       "bower-asset"
     ],
+    "build-env": {
+      "install-cms": [
+        "drush site-install standard --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes"
+      ],
+      "export-configuration": "drush config-export --yes"
+    },
     "composer-exit-on-patch-failure": true,
     "patchLevel": {
       "drupal/core": "-p2"
