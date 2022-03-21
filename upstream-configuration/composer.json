@@ -78,7 +78,7 @@
     "drupal/editoria11y": "1.0",
     "drupal/decorative_image_widget":"1.0.0-alpha4",
     "drupal/block_field": "1.0.0-rc2",
-    "asuwebplatforms/webspark_cas": "1.0.0"
+    "asuwebplatforms/webspark-module-webspark_cas": "1.0.1"
   },
-  "version": "0.1.59"
+  "version": "0.1.60"
 }
