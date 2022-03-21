@@ -17,7 +17,7 @@
     "zaporylie/composer-drupal-optimizations": "1.2.0",
     "drupal/environment_indicator": "4.0.3",
     "drupal/cas": "1.7.0",
-    "asuwebplatforms/webspark-theme-renovation": "1.0.26",
+    "asuwebplatforms/webspark-theme-renovation": "1.0.27",
     "drupal/seckit": "2.0.0",
     "asuwebpplatforms/webspark-module-asu_brand": "1.2.5",
     "drupal/radix": "4.10.0",
@@ -80,5 +80,5 @@
     "drupal/block_field": "1.0.0-rc2",
     "asuwebplatforms/webspark-module-webspark_cas": "1.0.1"
   },
-  "version": "0.1.61"
+  "version": "0.1.62"
 }
