@@ -48,7 +48,7 @@
     "drupal/allowed_formats": "1.4.0",
     "drupal/field_menu": "1.0.0",
     "asuwebplatforms/webspark-module-asu_news": "1.2.2",
-    "asuwebplatforms/webspark-module-asu_events": "1.2.5",
+    "asuwebplatforms/webspark-module-asu_events": "1.2.6",
     "asuwebplatforms/webspark-module-asu_footer": "1.0.9",
     "asuwebplatforms/webspark-module-asu_react_integration": "1.0.1",
     "asuwebplatforms/webspark_module_asu_breadcrumb": "1.0.1",
@@ -80,5 +80,5 @@
     "drupal/block_field": "1.0.0-rc2",
     "asuwebplatforms/webspark-module-webspark_cas": "1.0.1"
   },
-  "version": "0.1.62"
+  "version": "0.1.63"
 }
