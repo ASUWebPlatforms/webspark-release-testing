@@ -26,7 +26,7 @@
     "npm-asset/select2": "4.1.0-RC.0",
     "npm-asset/fonticonpicker--fonticonpicker": "3.1.1",
     "oomphinc/composer-installers-extender": "2.0.0",
-    "asuwebplatforms/webspark-module-webspark_utility": "1.1.5",
+    "asuwebplatforms/webspark-module-webspark_utility": "1.1.6",
     "asuwebplatforms/webspark_module_renovation_layouts": "1.0.3",
     "drupal/select2" : "1.13.0",
     "drupal/paragraphs" : "1.13.0",
@@ -80,5 +80,5 @@
     "drupal/block_field": "1.0.0-rc2",
     "asuwebplatforms/webspark-module-webspark_cas": "1.0.1"
   },
-  "version": "0.1.68"
+  "version": "0.1.69"
 }
