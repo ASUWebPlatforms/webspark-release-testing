@@ -79,8 +79,8 @@
     "drupal/decorative_image_widget":"1.0.0-alpha4",
     "drupal/block_field": "1.0.0-rc2",
     "asuwebplatforms/webspark-module-webspark_cas": "1.0.1",
-    "asuwebplatforms/webspark-module-webspark_webdir": "1.0.5",
+    "asuwebplatforms/webspark-module-webspark_webdir": "1.0.6",
     "drupal/field_states_ui": "2.0"
   },
-  "version": "0.1.85"
+  "version": "0.1.86"
 }
