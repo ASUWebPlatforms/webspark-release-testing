@@ -19,7 +19,7 @@
     "drupal/cas": "1.7.0",
     "asuwebplatforms/webspark-theme-renovation": "1.0.31",
     "drupal/seckit": "2.0.0",
-    "asuwebpplatforms/webspark-module-asu_brand": "1.2.8",
+    "asuwebplatforms/webspark-module-asu_brand": "1.2.8",
     "drupal/radix": "4.10.0",
     "asuwebplatforms/webspark-profile-webspark": "1.1.10",
     "drupal/components" : "2.4.0",
@@ -82,5 +82,5 @@
     "asuwebplatforms/webspark-module-webspark_webdir": "1.0.5",
     "drupal/field_states_ui": "2.0"
   },
-  "version": "0.1.84"
+  "version": "0.1.85"
 }
