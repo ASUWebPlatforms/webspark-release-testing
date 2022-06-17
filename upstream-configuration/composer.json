@@ -82,5 +82,14 @@
     "asuwebplatforms/webspark-module-webspark_webdir": "1.0.14",
     "drupal/field_states_ui": "2.0"
   },
-  "version": "0.1.97"
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "cweagans/composer-patches": true,
+      "drupal/core-composer-scaffold": true,
+      "zaporylie/composer-drupal-optimizations": true,
+      "oomphinc/composer-installers-extender": true
+    }
+  },
+  "version": "0.1.98"
 }
