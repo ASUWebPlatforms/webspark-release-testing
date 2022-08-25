@@ -42,6 +42,7 @@
         }
     ],
     "require": {
+        "drupal/ctools": "3.7.0",
         "drush/drush": "^10",
         "pantheon-upstreams/upstream-configuration": "*"
     },
