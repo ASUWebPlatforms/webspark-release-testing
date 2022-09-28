@@ -60,7 +60,7 @@
         "asuwebplatforms/webspark-module-webspark_ckeditor_plugins": "1.0.6",
         "drupal/layout_builder_component_attributes": "2.0.1",
         "asuwebplatforms/webspark-module-asu_user": "1.1.0",
-        "asuwebplatforms/webspark-module-asu_degree_rfi": "1.2.2",
+        "asuwebplatforms/webspark-module-asu_degree_rfi": "1.2.3",
         "asuwebplatforms/webspark-module-webspark_cropper_theme": "1.0.1",
         "drupal/ckeditor_responsive_plugin": "2.0.1",
         "drupal/maxlength": "1.0.0-rc1",
@@ -83,5 +83,5 @@
         "drupal/field_states_ui": "2.0",
         "drupal/ctools": "^3.11.0"
     },
-    "version": "0.1.109"
+    "version": "0.1.110"
 }
