@@ -10,8 +10,8 @@
     "require": {
         "php": ">=7.3",
         "composer/installers": "v1.11.0",
-        "drupal/core-composer-scaffold": "9.3.19",
-        "drupal/core-recommended": "9.3.19",
+        "drupal/core-composer-scaffold": "9.3.22",
+        "drupal/core-recommended": "9.3.22",
         "pantheon-systems/drupal-integrations": "9.0.2",
         "cweagans/composer-patches": "1.7.1",
         "zaporylie/composer-drupal-optimizations": "1.2.0",
@@ -83,5 +83,5 @@
         "drupal/field_states_ui": "2.0",
         "drupal/ctools": "^3.11.0"
     },
-    "version": "0.1.108"
+    "version": "0.1.109"
 }
