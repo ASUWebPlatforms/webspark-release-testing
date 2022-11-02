@@ -33,7 +33,8 @@ if (PHP_SAPI !== 'cli') {
 }
 
 /**
- * Allow all configuration to be changed.
+ * Allow all core configurations to be changed.
+ * Configurations from Webspark modules are locked by default.
  */
 $settings['config_readonly_whitelist_patterns'] = ['*'];
 
