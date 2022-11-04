@@ -75,6 +75,9 @@
             },
             "drupal/linkit": {
                 "2877535: Fix issue with path alias": "https://www.drupal.org/files/issues/2022-06-07/2877535-39.patch"
+            },
+            "drupal/allowed_formats": {
+                "3269869: Drupal 10 compatibility": "https://git.drupalcode.org/project/allowed_formats/-/commit/9b52e52.patch"
             }
         },
         "installer-paths": {
