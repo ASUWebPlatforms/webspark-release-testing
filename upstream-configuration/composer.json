@@ -35,7 +35,7 @@
         "drupal/devel_kint_extras": "^1.0",
         "drupal/crop": "2.3.0",
         "drupal/image_widget_crop": "2.3.0",
-        "drupal/layout_builder_restrictions" : "2.12.0",
+        "drupal/layout_builder_restrictions" : "2.16.0",
         "asuwebplatforms/webspark_module_views_pager": "1.0.3",
         "asuwebplatforms/webspark-module-webspark_blocks": "1.1.16",
         "drupal/linkit": "6.0.0-beta3",
