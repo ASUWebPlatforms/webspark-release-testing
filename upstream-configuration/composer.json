@@ -29,7 +29,7 @@
         "asuwebplatforms/webspark-module-webspark_utility": "1.1.6",
         "asuwebplatforms/webspark_module_renovation_layouts": "1.0.5",
         "drupal/select2" : "1.13.0",
-        "drupal/paragraphs" : "1.13.0",
+        "drupal/paragraphs" : "1.15.0",
         "drupal/fontawesome" : "2.24.0",
         "drupal/devel": "^4.1",
         "drupal/devel_kint_extras": "^1.0",
