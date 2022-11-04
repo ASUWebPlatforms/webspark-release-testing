@@ -54,7 +54,7 @@
         "asuwebplatforms/webspark_module_asu_breadcrumb": "1.0.1",
         "asuwebplatforms/webspark-module-asu_react_core": "1.4.0",
         "asuwebplatforms/webspark-module-asu_components_appearance": "1.0.1",
-        "drupal/layout_section_classes": "1.1.0",
+        "drupal/layout_section_classes": "1.2.0",
         "drupal/field_group": "3.4.0",
         "drupal/metatag": "1.19.0",
         "asuwebplatforms/webspark-module-webspark_ckeditor_plugins": "1.0.6",
