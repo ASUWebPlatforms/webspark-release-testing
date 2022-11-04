@@ -75,7 +75,7 @@
         "drupal/robotstxt": "1.4",
         "drupal/captcha": "1.5",
         "drupal/schema_metatag": "2.3",
-        "drupal/editoria11y": "1.0",
+        "drupal/editoria11y": "2.0.2",
         "drupal/decorative_image_widget":"1.0.0-alpha4",
         "drupal/block_field": "1.0.0-rc4",
         "asuwebplatforms/webspark-module-webspark_cas": "1.0.1",
