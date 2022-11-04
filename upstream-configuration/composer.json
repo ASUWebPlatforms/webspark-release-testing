@@ -20,7 +20,7 @@
         "asuwebplatforms/webspark-theme-renovation": "1.0.37",
         "drupal/seckit": "2.0.0",
         "asuwebplatforms/webspark-module-asu_brand": "1.2.12",
-        "drupal/radix": "4.10.0",
+        "drupal/radix": "4.11.0",
         "asuwebplatforms/webspark-profile-webspark": "1.1.12",
         "drupal/components" : "2.4.0",
         "npm-asset/select2": "4.1.0-RC.0",
