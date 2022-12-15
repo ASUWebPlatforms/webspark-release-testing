@@ -75,6 +75,9 @@
             },
             "drupal/allowed_formats": {
                 "3269869: Drupal 10 compatibility": "https://git.drupalcode.org/project/allowed_formats/-/commit/9b52e52.patch"
+            },
+            "drupal/cas": {
+                "3318382: TypeError: in_array(): Argument #2 ($haystack) must be of type array": "https://www.drupal.org/files/issues/2022-10-31/cas-null-in_array-3318382-0.patch"
             }
         },
         "installer-paths": {
