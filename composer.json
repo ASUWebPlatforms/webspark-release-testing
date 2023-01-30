@@ -82,6 +82,9 @@
             },
             "drupal/cas": {
                 "3318382: TypeError: in_array(): Argument #2 ($haystack) must be of type array": "https://www.drupal.org/files/issues/2022-10-31/cas-null-in_array-3318382-0.patch"
+            },
+            "drupal/ckeditor": {
+                "#3095304: Changes to a block's text field not saved when ckeditor source mode is active": "https://www.drupal.org/files/issues/2023-01-05/changes_to_a_blocks_text_field_not_saved_3095304-47_3.patch"
             }
         },
         "installer-paths": {
