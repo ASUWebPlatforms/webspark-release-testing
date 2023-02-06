@@ -1,143 +1,150 @@
 {
-    "name": "asuwebplatforms/webspark-release-testing",
-    "description": "Install Drupal 9 with Composer on Pantheon.",
-    "type": "project",
-    "license": "MIT",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "path",
-            "url": "upstream-configuration"
-        },
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "ckeditor/link",
-                "version": "4.16.1",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://download.ckeditor.com/link/releases/link_4.16.1.zip",
-                    "type": "zip"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "ckeditor/fakeobjects",
-                "version": "4.16.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.16.0.zip",
-                    "type": "zip"
-                }
-            }
-        }
-    ],
-    "require": {
-        "drush/drush": "^11",
-        "pantheon-upstreams/upstream-configuration": "*"
+  "name": "asuwebplatforms/webspark-upstream",
+  "description": "Install Drupal 9 with Composer on Pantheon.",
+  "type": "project",
+  "license": "MIT",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
     },
-    "conflict": {
-        "drupal/drupal": "*"
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "extra": {
-        "enable-patching": true,
-        "patches": {
-            "drupal/radix": {
-                "3053579: Integrate with OffCanvas (Layout Builder)": "https://www.drupal.org/files/issues/2021-12-15/3053579-32.patch"
-            },
-            "drupal/fakeobjects" : {
-                "3002953: Fix js plugin seems to be missing":  "https://www.drupal.org/files/issues/2020-06-22/fakeobjects-missing_plugin-3002953-5.patch"
-            },
-            "drupal/core": {
-                "#2951547: Fix issue with layout overflow": "https://www.drupal.org/files/issues/2020-01-08/layout-builder-tray-size-2951547-42.patch",
-                "3102249: Changing an existing embedded media's attributes does not get saved with CKEditor": "https://www.drupal.org/files/issues/2020-06-01/3102249-21.patch",
-                "3109650: Refactor Xss::attributes() to allow filtering of style attribute values": "https://www.drupal.org/files/issues/2021-09-22/core-9.2-xss-refactor_filter_attributes-3109650-43.patch",
-                "3097338: Fix issue with image replacement in ckeditor": "https://www.drupal.org/files/issues/2021-06-03/drupal-3097338-68.patch"
-            },
-            "drupal/config_readonly": {
-                "#3085001: Config blacklist to only block some configuration while in read only mode": "https://www.drupal.org/files/issues/2019-10-31/config_readonly-3085001-2.patch"
-            },
-            "drupal/field_states_ui": {
-                "#3225009: Cant add custom block with field states ui using layout builder": "https://www.drupal.org/files/issues/2022-03-07/3225009-5.patch"
-            },
-            "drupal/linkit": {
-                "2877535: Fix issue with path alias": "https://www.drupal.org/files/issues/2022-06-07/2877535-39.patch"
-            },
-            "drupal/allowed_formats": {
-                "3269869: Drupal 10 compatibility": "https://git.drupalcode.org/project/allowed_formats/-/commit/9b52e52.patch"
-            },
-            "drupal/fontawesome": {
-                "#3219579: Hidding font awesome additional settings": "https://www.drupal.org/files/issues/2022-12-14/hidding_font_awesome_additional_settings-3219579-18.patch"
-            },
-            "drupal/cas": {
-                "3318382: TypeError: in_array(): Argument #2 ($haystack) must be of type array": "https://www.drupal.org/files/issues/2022-10-31/cas-null-in_array-3318382-0.patch"
-            },
-            "drupal/ckeditor": {
-                "#3095304: Changes to a block's text field not saved when ckeditor source mode is active": "https://www.drupal.org/files/issues/2023-01-05/changes_to_a_blocks_text_field_not_saved_3095304-47_3.patch"
-            }
-        },
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library", "type:npm-asset", "type:bower-asset"],
-            "web/modules/composer/{$name}": ["type:drupal-module"],
-            "web/profiles/composer/{$name}": ["type:drupal-profile"],
-            "web/themes/composer/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/libraries/ckeditor/plugins/{$name}": ["vendor:ckeditor-plugin"]
-        },
-        "installer-types": [
-            "npm-asset",
-            "bower-asset"
-        ],
-        "composer-exit-on-patch-failure": true,
-        "patchLevel": {
-            "drupal/core": "-p2"
-        },
-        "drupal-scaffold": {
-            "allowed-packages": [
-                "pantheon-systems/drupal-integrations"
-            ],
-            "locations": {
-                "web-root": "./web"
-            },
-            "file-mapping": {
-                "[project-root]/.editorconfig": false,
-                "[project-root]/pantheon.upstream.yml": false,
-                "[project-root]/.gitattributes": false,
-                "[web-root]/robots.txt": false
-            }
-        },
-        "merge-plugin": {
-            "include": [
-                "composer.libraries.json"
-            ]
+    {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/link",
+        "version": "4.16.1",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://download.ckeditor.com/link/releases/link_4.16.1.zip",
+          "type": "zip"
         }
+      }
     },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "platform": {
-            "php": "8.1.6"
-        },
-        "allow-plugins": {
-            "composer/installers": true,
-            "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true,
-            "zaporylie/composer-drupal-optimizations": true,
-            "oomphinc/composer-installers-extender": true
+    {
+      "type": "package",
+      "package": {
+        "name": "ckeditor/fakeobjects",
+        "version": "4.16.0",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.16.0.zip",
+          "type": "zip"
         }
+      }
+    },
+    {
+      "type": "path",
+      "url": "upstream-configuration"
+    },
+    {
+      "type": "path",
+      "url": "custom"
     }
+  ],
+  "require": {
+    "drush/drush": "^11",
+    "pantheon-upstreams/upstream-configuration": "*",
+    "webspark/site-configuration": "*"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "enable-patching": true,
+    "patches-file": "composer.patches.json",
+    "installer-types": [
+      "npm-asset",
+      "bower-asset"
+    ],
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library",
+        "type:npm-asset",
+        "type:bower-asset"
+      ],
+      "web/modules/composer/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/composer/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/composer/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/Commands/contrib/{$name}": [
+        "type:drupal-drush"
+      ],
+      "web/private/scripts/quicksilver/{$name}/": [
+        "type:quicksilver-script"
+      ],
+      "web/modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "web/libraries/ckeditor/plugins/{$name}": [
+        "vendor:ckeditor-plugin"
+      ]
+    },
+    "composer-exit-on-patch-failure": true,
+    "patchLevel": {
+      "drupal/core": "-p2"
+    },
+    "drupal-scaffold": {
+      "allowed-packages": [
+        "pantheon-systems/drupal-integrations"
+      ],
+      "locations": {
+        "web-root": "./web"
+      },
+      "file-mapping": {
+        "[project-root]/.editorconfig": false,
+        "[project-root]/pantheon.upstream.yml": false,
+        "[project-root]/.gitattributes": false,
+        "[web-root]/robots.txt": false
+      }
+    }
+  },
+  "autoload": {
+    "classmap": [
+      "upstream-configuration/scripts/ComposerScripts.php"
+    ]
+  },
+  "scripts": {
+    "pre-update-cmd": [
+      "DrupalComposerManaged\\ComposerScripts::preUpdate"
+    ],
+    "upstream-require": [
+      "DrupalComposerManaged\\ComposerScripts::upstreamRequire"
+    ],
+    "post-update-cmd": [
+      "DrupalComposerManaged\\ComposerScripts::postUpdate"
+    ],
+    "update-upstream-dependencies": "DrupalComposerManaged\\ComposerScripts::updateUpstreamDependencies"
+  },
+  "scripts-descriptions": {
+    "update-upstream-dependencies": "Update the composer.lock file for the upstream dependencies."
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "platform": {
+      "php": "8.1.6"
+    },
+    "allow-plugins": {
+      "composer/installers": true,
+      "cweagans/composer-patches": true,
+      "drupal/core-composer-scaffold": true,
+      "zaporylie/composer-drupal-optimizations": true,
+      "oomphinc/composer-installers-extender": true,
+      "phpstan/extension-installer": true
+    }
+  }
 }

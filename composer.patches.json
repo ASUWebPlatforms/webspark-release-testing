@@ -1,0 +1,33 @@
+{
+  "patches": {
+    "drupal/radix": {
+      "3053579: Integrate with OffCanvas (Layout Builder)": "https://www.drupal.org/files/issues/2021-12-15/3053579-32.patch"
+    },
+    "drupal/fakeobjects": {
+      "3002953: Fix js plugin seems to be missing": "https://www.drupal.org/files/issues/2020-06-22/fakeobjects-missing_plugin-3002953-5.patch"
+    },
+    "drupal/core": {
+      "#2951547: Fix issue with layout overflow": "https://www.drupal.org/files/issues/2020-01-08/layout-builder-tray-size-2951547-42.patch",
+      "3102249: Changing an existing embedded media's attributes does not get saved with CKEditor": "https://www.drupal.org/files/issues/2020-06-01/3102249-21.patch",
+      "3109650: Refactor Xss::attributes() to allow filtering of style attribute values": "https://www.drupal.org/files/issues/2021-09-22/core-9.2-xss-refactor_filter_attributes-3109650-43.patch"
+    },
+    "drupal/config_readonly": {
+      "#3085001: Config blacklist to only block some configuration while in read only mode": "https://www.drupal.org/files/issues/2019-10-31/config_readonly-3085001-2.patch"
+    },
+    "drupal/field_states_ui": {
+      "#3225009: Cant add custom block with field states ui using layout builder": "https://www.drupal.org/files/issues/2022-03-07/3225009-5.patch"
+    },
+    "drupal/linkit": {
+      "2877535: Fix issue with path alias": "https://www.drupal.org/files/issues/2022-06-07/2877535-39.patch"
+    },
+    "drupal/allowed_formats": {
+      "3269869: Drupal 10 compatibility": "https://git.drupalcode.org/project/allowed_formats/-/commit/9b52e52.patch"
+    },
+    "drupal/fontawesome": {
+      "#3219579: Hidding font awesome additional settings": "https://www.drupal.org/files/issues/2022-12-14/hidding_font_awesome_additional_settings-3219579-18.patch"
+    },
+    "drupal/cas": {
+      "3318382: TypeError: in_array(): Argument #2 ($haystack) must be of type array": "https://www.drupal.org/files/issues/2022-10-31/cas-null-in_array-3318382-0.patch"
+    }
+  }
+}
