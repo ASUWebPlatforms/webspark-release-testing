@@ -21,7 +21,7 @@
         "drupal/seckit": "2.0.0",
         "asuwebplatforms/webspark-module-asu_brand": "1.2.13",
         "drupal/radix": "4.11.0",
-        "asuwebplatforms/webspark-profile-webspark": "1.1.14",
+        "asuwebplatforms/webspark-profile-webspark": "1.1.15",
         "drupal/components": "2.4.0",
         "npm-asset/select2": "4.1.0-RC.0",
         "npm-asset/fonticonpicker--fonticonpicker": "3.1.1",
@@ -83,5 +83,5 @@
         "drupal/field_states_ui": "2.0",
         "drupal/ctools": "^3.11.0"
     },
-    "version": "0.2.24"
+    "version": "0.2.25"
 }
