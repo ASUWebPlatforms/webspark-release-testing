@@ -52,7 +52,7 @@
         "asuwebplatforms/webspark-module-asu_footer": "1.0.14",
         "asuwebplatforms/webspark-module-asu_react_integration": "1.0.1",
         "asuwebplatforms/webspark_module_asu_breadcrumb": "1.0.1",
-        "asuwebplatforms/webspark-module-asu_react_core": "1.4.1",
+        "asuwebplatforms/webspark-module-asu_react_core": "1.4.2",
         "asuwebplatforms/webspark-module-asu_components_appearance": "1.0.1",
         "drupal/layout_section_classes": "1.2.0",
         "drupal/field_group": "3.4.0",
@@ -83,5 +83,5 @@
         "drupal/field_states_ui": "2.0",
         "drupal/ctools": "^3.11.0"
     },
-    "version": "0.2.25"
+    "version": "0.2.26"
 }
