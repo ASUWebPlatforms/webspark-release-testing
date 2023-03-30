@@ -81,7 +81,8 @@
         "asuwebplatforms/webspark-module-webspark_cas": "1.0.4",
         "asuwebplatforms/webspark-module-webspark_webdir": "1.2.5",
         "drupal/field_states_ui": "2.0",
-        "drupal/ctools": "^3.11.0"
+        "drupal/ctools": "^3.11.0",
+        "drupal/imagemagick": "^3.4"
     },
-    "version": "0.2.33"
+    "version": "0.2.34"
 }
