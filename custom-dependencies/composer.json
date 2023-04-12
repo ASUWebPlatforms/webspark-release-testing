@@ -1,0 +1,31 @@
+{
+    "name": "webspark/custom-dependencies",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "drupal/encrypt": "^3.1",
+        "drupal/key": "^1.17"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "version": "1.0.0",
+    "extra": {
+        "installer-paths": {
+            "../web/modules/contrib/{$name}/": [
+                "type:drupal-module"
+            ],
+            "../web/themes/contrib/{$name}/": [
+                "type:drupal-theme"
+            ],
+            "../web/libraries/{$name}/": [
+                "type:drupal-library"
+            ]
+        }
+    }
+}
