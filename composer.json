@@ -42,13 +42,13 @@
     },
     {
       "type": "path",
-      "url": "custom"
+      "url": "custom-dependencies"
     }
   ],
   "require": {
     "drush/drush": "^11",
     "pantheon-upstreams/upstream-configuration": "*",
-    "webspark/site-configuration": "*"
+    "webspark/custom-dependencies": "*"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -114,7 +114,8 @@
   },
   "autoload": {
     "classmap": [
-      "upstream-configuration/scripts/ComposerScripts.php"
+      "upstream-configuration/scripts/ComposerScripts.php",
+      "custom-dependencies/scripts/CustomComposerScripts.php"
     ]
   },
   "scripts": {
@@ -127,7 +128,8 @@
     "post-update-cmd": [
       "DrupalComposerManaged\\ComposerScripts::postUpdate"
     ],
-    "update-upstream-dependencies": "DrupalComposerManaged\\ComposerScripts::updateUpstreamDependencies"
+    "update-upstream-dependencies": "DrupalComposerManaged\\ComposerScripts::updateUpstreamDependencies",
+    "custom-require": "WebsparkCustomScripts\\CustomComposerScripts::customRequire"
   },
   "scripts-descriptions": {
     "update-upstream-dependencies": "Update the composer.lock file for the upstream dependencies."
