@@ -21,7 +21,7 @@
         "drupal/seckit": "2.0.0",
         "asuwebplatforms/webspark-module-asu_brand": "1.2.15",
         "drupal/radix": "4.11.0",
-        "asuwebplatforms/webspark-profile-webspark": "1.1.19",
+        "asuwebplatforms/webspark-profile-webspark": "1.1.20",
         "drupal/components": "2.4.0",
         "npm-asset/select2": "4.1.0-RC.0",
         "npm-asset/fonticonpicker--fonticonpicker": "3.1.1",
