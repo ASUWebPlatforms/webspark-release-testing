@@ -9,7 +9,23 @@ use Composer\Util\ProcessExecutor;
 
 class CustomComposerScripts
 {
-  // Copied from Pantheon example, but doesnt actually seem to install the module.
+  /**
+   * Add a dependency to the custom-dependencies composer.json file.
+   *
+   * The custom-dependencies/composer.json is a place to put modules, themes
+   * and other dependencies that will be specific to user sites created from
+   * the upstream. Separating the site dependencies from the upstream dependencies
+   * has the advantage that changes can be made to the upstream without causing
+   * conflicts in the downstream sites.
+   *
+   * To add a dependency to your site:
+   *
+   *    composer custom-require drupal/modulename
+   *
+   * Then install the new dependency:
+   *
+   *    composer update
+   */
   public static function customRequire(Event $event) {
     $io = $event->getIO();
     $composer = $event->getComposer();
@@ -54,37 +70,4 @@ class CustomComposerScripts
 
     return $statusCode;
   }
-
-  // Not quite right, installs into the wrong place.
-  // public static function customRequire(Event $event)
-  // {
-  //   $args = $event->getArguments();
-  //   $package_and_version = $args[0] ?? null;
-
-  //   if (!$package_and_version) {
-  //     echo "Please provide a package name and version constraint to require.\n";
-  //     exit(1);
-  //   }
-
-  //   $custom_composer_file = __DIR__ . '/../composer.json';
-  //   $custom_composer = json_decode(file_get_contents($custom_composer_file), true);
-
-  //   list($package, $version_constraint) = explode(':', $package_and_version);
-  //   $custom_composer['require'][$package] = $version_constraint;
-
-  //   // Make sure to install the module into the web/modules/composer folder
-  //   // $custom_composer['extra']['installer-paths']['web/modules/composer/{$name}'] = ['type:drupal-module'];
-
-  //   file_put_contents($custom_composer_file, json_encode($custom_composer, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
-
-  //   chdir(__DIR__ . '/..');
-
-  //   // Run composer require for the specified package in the custom-dependencies folder
-  //   exec("composer require --no-update {$package_and_version}");
-
-  //   // Install the new package without updating other dependencies
-  //   exec("composer install --no-dev --optimize-autoloader");
-
-  //   echo "Successfully required package: {$package_and_version}\n";
-  // }
 }

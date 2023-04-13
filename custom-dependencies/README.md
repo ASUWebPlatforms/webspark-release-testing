@@ -16,14 +16,14 @@ These changes allow for better organization and separation of concerns within th
 ### Custom Dependencies
 
 1. Locate the `custom-dependencies/composer.json` file in the project.
-2. Remove all custom dependencies out of `./composer.json`, and move them into `custom-dependencies/composer.json`.
+2. Remove all custom dependencies out of the root `composer.json` file, and move them into `custom-dependencies/composer.json`.
 3. Add, update, or remove custom dependencies from the "require" section of the `custom-dependencies/composer.json` file as needed.
 
 ### Drupal Patches
 
-1. Locate the `./composer.patches.json` file in the project root.
-2. Remove all custom patches out of `./composer.json`, and move them into `./composer.patches.json`.
-3. Add, update, or remove patches in the "patches" section of the `./composer.patches.json` file as needed.
+1. Locate the `composer.patches.json` file in the project root.
+2. Remove all custom patches out of the root `composer.json` file, and move them into `composer.patches.json`.
+3. Add, update, or remove patches in the "patches" section of the `composer.patches.json` file as needed.
 4. As we may need to add patches periodically, we recommend that you place your patches at the beginning of this file.
 
 ## Managing Dependencies Moving Forward
@@ -48,16 +48,17 @@ In order to simplify the process of adding custom dependencies and to maintain t
 
 ### Why is this needed?
 
-The `custom-require` command ensures that users can easily add custom dependencies without directly modifying the `custom-dependencies/composer.json` file. It reduces the chances of user errors and provides a seamless experience for managing custom dependencies.
+The `custom-require` command ensures that users can easily add custom dependencies without directly modifying the root `/composer.json` file. It reduces the chances of merge conflicts and provides a seamless experience for managing custom dependencies.
 
 ### How to use it?
 
-To add a new custom dependency, run the following command from the project root:
+To add a new dependency, run the following command from the project root:
 
 ```sh
-composer custom-require vendor/package
+composer custom-require drupal/module
+composer update
 ```
 
-Replace `vendor/package` with the actual package name you want to require.
+Replace `drupal/module` with the actual package name you want to require.
 
 By following these guidelines, you'll ensure a consistent and organized approach to managing your custom dependencies and patches within the project.
